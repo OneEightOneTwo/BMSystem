@@ -1,0 +1,91 @@
+.login{
+  width: 100%;
+  height: 100%;
+  background: url(../../img/login_background.jpg) center;
+  overflow: hidden;
+  color: #fff;
+}
+.container{
+  margin: auto ;
+  background: #051b30;
+  width: 650px;
+  height: 450px;
+  margin-top: 180px;
+  opacity: 0.8;
+  overflow: hidden;
+  position: relative;
+}
+.world{
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.user,.passworld{
+  margin-left: 55px;
+  height: 60px;
+  width: 540px;
+  margin-top: 50px;
+  font-size: 21px;
+  padding-left: 75px;
+  box-sizing: border-box;
+}
+.user{
+  margin-top: 25px;
+}
+.loginBtn{
+  width: 100%;
+  height: 70px;
+  background: #07d9c0;
+  border: none;
+  margin-top: 85px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.loginBtn:hover{
+  background: #00e8fe;
+}
+.icon1{
+  position: absolute;
+  left: 75px;
+  top: 135px;
+  width: 28px;
+  height: 37px;
+  background: url(../../img/icon1.png)
+}
+.icon2{
+  position: absolute;
+  left: 75px;
+  top: 245px;
+  width: 28px;
+  height: 37px;
+  background: url(../../img/icon2.png)
+}
+.tanChuang{
+  position: fixed;
+  /* top: 40px; */
+  left: 650px;
+  width: 500px;
+  height: 50px;
+  background: #fff1f1;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.noIcon{
+  display: inline-block;
+  z-index: 5;
+  width: 45px;
+  height: 20px;
+  background: url(../../img/no.png) no-repeat 25px -1px;
+  vertical-align: middle;
+}
+.noWorld{
+  z-index: 5;
+  color: #ff2687;
+  font-size: 18px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
