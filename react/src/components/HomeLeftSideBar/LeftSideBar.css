@@ -1,0 +1,11 @@
+.container{
+  margin: auto ;
+  float: left;
+  overflow: hidden;
+  width: 180px;
+
+}
+.left{
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
