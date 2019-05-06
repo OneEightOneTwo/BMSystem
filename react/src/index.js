@@ -11,6 +11,8 @@ const app = dva();
 
 // 3. Model,仓库
 app.model(require('./models/width').default);
+app.model(require('./models/list').default);
+
 
 // 4. Router
 app.router(require('./router').default);

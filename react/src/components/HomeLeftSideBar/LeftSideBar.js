@@ -48,6 +48,26 @@ class LeftSideBar extends Component {
     window.location.href = "/#/home/one"
   }
 
+
+
+  renderSubMenu() {
+    return this.props.list.listLi.map((item) => {
+      return (
+        <SubMenu key={item.key} title={<span><Icon type={item.type} /><span>{item.title}</span></span>}>
+          <Menu.Item key={item.itemKey1}>{item.itemTitle1}</Menu.Item>
+          <Menu.Item key={item.itemKey2}>{item.itemTitle2}</Menu.Item>
+          <Menu.Item key={item.itemKey3}>{item.itemTitle3}</Menu.Item>
+          {/* <Menu.Item key={item.itemKey4}>{item.itemTitle4}</Menu.Item> */}
+        </SubMenu>
+      )
+    })
+  }
+
+
+
+
+
+
   render() {
     return (
       <div className={style.container} style={{ height: this.state.height, width: this.state.buttonWidth ? "180px" : "80px" }}>
@@ -71,7 +91,8 @@ class LeftSideBar extends Component {
               <Icon type="desktop" />
               <span>编辑个人资料</span>
             </Menu.Item>
-            <SubMenu key="sub1" title={<span><Icon type="mail" /><span>客户管理</span></span>}>
+            {this.renderSubMenu()}
+            {/* <SubMenu key="sub1" title={<span><Icon type="mail" /><span>客户管理</span></span>}>
               <Menu.Item key="3">客户概览</Menu.Item>
               <Menu.Item key="4">客户信息系统</Menu.Item>
               <Menu.Item key="5">客户用电数据</Menu.Item>
@@ -111,7 +132,7 @@ class LeftSideBar extends Component {
             <SubMenu key="sub8" title={<span><Icon type="mail" /><span>数据管理</span></span>}>
               <Menu.Item key="25">日前申报数据</Menu.Item>
               <Menu.Item key="26">现货电价数据</Menu.Item>
-              <Menu.Item key="27">日志管理</Menu.Item>
+              <Menu.Item key="27"></Menu.Item>
             </SubMenu>
             <SubMenu key="sub9" title={<span><Icon type="mail" /><span>月度电量申报</span></span>}>
               <Menu.Item key="28">电量申报管理</Menu.Item>
@@ -134,7 +155,7 @@ class LeftSideBar extends Component {
               <Menu.Item key="37">现货价格仿真</Menu.Item>
               <Menu.Item key="38">历史成交分析</Menu.Item>
               <Menu.Item key="39">风险管理</Menu.Item>
-            </SubMenu>
+            </SubMenu> */}
           </Menu>
         </div>
       </div>
