@@ -39,7 +39,7 @@ export default class LoginPage extends Component {
         <div className={style.container}>
           <p className={style.world}>后台管理系统</p>
           <input className={style.user} placeholder="手机/邮箱/用户名" onBlur={this.getUser.bind(this)}></input>
-          <input className={style.passworld} placeholder="密码" onBlur={this.getPassw.bind(this)}></input>
+          <input className={style.passworld} placeholder="密码" onBlur={this.getPassw.bind(this)} type="password"></input>
           <button className={style.loginBtn} onClick={this.login.bind(this)}>登陆</button>
           <i className={style.icon1}></i>
           <i className={style.icon2}></i>

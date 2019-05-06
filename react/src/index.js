@@ -2,6 +2,9 @@ import dva from 'dva';
 import './index.css';
 // 引入antd样式
 import 'antd/dist/antd.css';
+// 引入公共样式
+import './base.css';
+
 
 // 1. Initialize
 const app = dva();

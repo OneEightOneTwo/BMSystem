@@ -48,8 +48,7 @@ class LeftSideBar extends Component {
     window.location.href = "/#/home/one"
   }
 
-
-
+  //封装列表，函数式编程
   renderSubMenu() {
     return this.props.list.listLi.map((item) => {
       return (
@@ -57,16 +56,10 @@ class LeftSideBar extends Component {
           <Menu.Item key={item.itemKey1}>{item.itemTitle1}</Menu.Item>
           <Menu.Item key={item.itemKey2}>{item.itemTitle2}</Menu.Item>
           <Menu.Item key={item.itemKey3}>{item.itemTitle3}</Menu.Item>
-          {/* <Menu.Item key={item.itemKey4}>{item.itemTitle4}</Menu.Item> */}
         </SubMenu>
       )
     })
   }
-
-
-
-
-
 
   render() {
     return (
